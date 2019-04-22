@@ -1,0 +1,5 @@
+#Get token after authenticate to rh from browser console - Bearer xyz... 
+#See url details for first argument $1: https://github.com/jmfernandes/robin_stocks/blob/master/robin_stocks/urls.py
+# example ./rh.sh https://api.robinhood.com/positions/
+
+curl -H 'X-Robinhood-API-Version: 1.265.0' -H 'Referer: https://robinhood.com/' -H 'Origin: https://robinhood.com' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE1NTQ1OTQ2NDksInRva2VuIjoiYXJSaTlIeHFKTUU0M2Y1ekxOZHlSZmlCU3ZQdW91IiwidXNlcl9pZCI6ImIyNzEyNGM5LWMyMTAtNDA1NC1hZjVlLTAwMDFlMjU3ZWJiNyIsIm9wdGlvbnMiOnRydWV9.lHxyu0MzG4DwTPbqxdp9BW7MRmwKJ-_xiUdQ6PS28QI-AvA0NiO7vQlCLu6ebegrC3M3oM-feYel_ZJjFaKYb0RVyM5WpuvwEAh5tmEKBLaGFiMe3a1VF6F9eyUmZieJjuY0Na1gsQBYr1-RW_W2DXDC9_pZE_YDLAc3-l5xs95y0pIXL7NxqRNr3DY_SoclPo0W-K8y9wJDVmx-e_I5ovXxjirqTi6hBFgPMsKQlUZb0UVCRV3SsYtKPxPigkdXBJRfyjNRi5ZX5Xb8EDPQpAi0yC0hM_SG10_dEDRDIxitCb6GOn7Kwxfjz_6vygTYAOn66KdZOdjDWasoZIum3w' --compressed $1 
